@@ -1,4 +1,4 @@
-#A simulation of the MIPS cpu microarchitecture with a MIPS assembly compiler, built from scratch with react.
+## A simulation of the MIPS cpu microarchitecture with a MIPS assembly compiler, built from scratch with react.
 
 This simulation contains 3 major sections to display the inner workings of a virtual MIPS cpu, memory and the way a program runs on it.
 
