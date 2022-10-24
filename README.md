@@ -1,7 +1,5 @@
 # A simulation of how MIPS assembly code runs on the cpu
 
-This simulation contains 3 major sections to display the inner workings of a virtual MIPS cpu, memory and the way a program runs on it.
-
 ## The application is structured in the following way:
 
 The first section is the program. Where you write code in assembly for the cpu to run, and after you run it you can view which instruction the cpu is currently running.
@@ -11,11 +9,17 @@ The third section is the register file. It contains 8 registers numbered $0 to $
 ## The supported instructions are:
 
 add $r1, $r2, $r3 (add $r3 to $r2 and store the result in $r1)
+
 addi $r1, $r2, imm (add an integer represented by imm to $r2 and store result in $r1)
+
 lw $r1, imm($r2) (load the word from the memory address $r2+imm into the register $r1)
+
 sw $r1, imm($r2) (store the word in $r1 into the memory address $r2 + imm)
+
 beq $r1, $r2, label (go to the instruction number in label if $r1 and $r2 are equal)
+
 bne $r1, $r2, label (same as beq but if $r1 and $r2 are not equal)
+
 j label (go to the label unconditionally)
 
 ## Notes:
