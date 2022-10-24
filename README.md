@@ -4,6 +4,7 @@
 
 The first section is the program. Where you write code in assembly for the cpu to run, and after you run it you can view which instruction the cpu is currently running.
 The second section is a view of the state of the data memory of the program where it is divided into 32 addresses each corresponding to a single word (4 bytes), so the total data memory for this cpu is 1kb.
+
 The third section is the register file. It contains 8 registers numbered $0 to $7 for simplicity (as opposed to the 32 registers in the real MIPS microarchitecture), and it represents the value of each register during the execution of the program.
 
 ## The supported instructions are:
